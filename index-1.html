@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123d35">
+<title>EcoFiltro | Ciência para um ar melhor</title>
+<style>
+:root{--green:#123d35;--green2:#1f6b55;--mint:#dff4e8;--lime:#c8ed76;--cream:#f7f7f0;--ink:#172923;--muted:#61736b;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0;gap:20px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:850;font-size:1.15rem;letter-spacing:-.04em}.logo{display:grid;place-items:center;background:var(--lime);color:var(--green);width:40px;height:40px;border-radius:13px;font-size:1.4rem}.navlinks{display:flex;gap:25px;align-items:center}.navlinks a{text-decoration:none;font-size:.92rem;font-weight:650;color:#d8e9e1}.navlinks a:hover{color:var(--lime)}.nav .cta{background:var(--lime);color:var(--green);padding:11px 17px;border-radius:99px;text-decoration:none;font-weight:800}
+header{background:radial-gradient(circle at 85% 25%,#2b7459 0,transparent 32%),var(--green);color:white;overflow:hidden}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;padding:68px 0 90px}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #5b8977;color:#d4efdf;border-radius:99px;padding:7px 12px;font-size:.78rem;font-weight:750;text-transform:uppercase;letter-spacing:.1em}.dot{width:7px;height:7px;background:var(--lime);border-radius:50%}h1{font-size:clamp(2.7rem,6vw,5rem);line-height:.99;letter-spacing:-.065em;margin:23px 0}.hero h1 span{color:var(--lime)}.hero p{font-size:1.12rem;color:#d1e0d9;max-width:580px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 20px;border-radius:99px;text-decoration:none;font-weight:800;border:1px solid transparent;cursor:pointer;font-size:.96rem}.btn.primary{background:var(--lime);color:var(--green)}.btn.secondary{border-color:#648879;color:white}.hero-art{position:relative;min-height:390px;display:grid;place-items:center}.orb{width:min(340px,78vw);aspect-ratio:1;border-radius:50%;background:linear-gradient(145deg,#e2f7a5,#8dc7a1);display:grid;place-items:center;box-shadow:0 30px 90px #071c1766;position:relative}.orb:before{content:"";position:absolute;inset:23px;border:1px dashed #1d5947;border-radius:50%}.filter{width:45%;height:62%;background:#e9e8d8;border:9px solid #315b4a;border-radius:28px;position:relative;box-shadow:inset 0 0 0 5px #c6d4bb,0 20px 35px #214b3b55;display:flex;flex-direction:column;justify-content:space-evenly;align-items:center;z-index:1}.filter:before,.filter:after{content:"";width:70%;height:8px;background:#6e9d78;border-radius:8px}.filter .mesh{width:74%;height:45%;border-radius:8px;background:repeating-linear-gradient(0deg,#a4bba1 0 3px,#dbe3c8 3px 7px),repeating-linear-gradient(90deg,transparent 0 4px,#789b7c 4px 6px);border:2px solid #6a8c70}.bubble{position:absolute;background:white;color:var(--green);padding:12px 16px;border-radius:16px;box-shadow:0 10px 30px #001b1430;font-size:.85rem;font-weight:800}.bubble.one{top:42px;right:0}.bubble.two{bottom:38px;left:0}.section{padding:82px 0}.section-head{max-width:700px;margin-bottom:36px}.kicker{font-size:.78rem;font-weight:850;letter-spacing:.12em;text-transform:uppercase;color:var(--green2)}h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.055em;line-height:1.08;margin:12px 0 16px}.lead{color:var(--muted);font-size:1.08rem}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:white;border:1px solid #e3e9df;border-radius:22px;padding:25px}.card .icon{width:48px;height:48px;display:grid;place-items:center;background:var(--mint);border-radius:15px;font-size:1.4rem}.card h3{margin:18px 0 7px;font-size:1.12rem}.card p{color:var(--muted);margin:0}.split{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.dark-panel{background:var(--green);color:white;border-radius:28px;padding:32px}.dark-panel p{color:#d1e0d9}.steps{display:grid;gap:14px;margin-top:22px}.step{display:grid;grid-template-columns:42px 1fr;gap:13px;align-items:start}.num{display:grid;place-items:center;width:38px;height:38px;border-radius:13px;background:var(--lime);color:var(--green);font-weight:900}.step h3{margin:2px 0 4px}.step p{margin:0;color:var(--muted)}.dark-panel .step p{color:#d1e0d9}.note{background:#edf5d9;border:1px solid #d9e9b8;border-radius:18px;padding:18px 20px;margin-top:22px}.note strong{color:var(--green)}.materials{background:#eaf1e7}.pilllist{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.pill{background:white;border:1px solid #d7e2d5;border-radius:99px;padding:9px 14px;font-weight:700;font-size:.9rem}.applications{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.app{min-height:175px;border-radius:22px;padding:22px;background:#fff;border:1px solid #e1e8df}.app span{font-size:1.7rem}.app h3{font-size:1rem;margin:14px 0 5px}.app p{font-size:.9rem;color:var(--muted);margin:0}.warning{background:#fff3d9;border:1px solid #f0dcae;padding:22px;border-radius:20px;margin-top:24px}.warning h3{margin:0 0 8px}.warning p{margin:0;color:#6b5a35}.footer{background:#102f29;color:white;padding:40px 0}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.footer p{color:#b8d0c5;margin:6px 0 0;font-size:.9rem}.footer a{color:var(--lime);text-decoration:none;font-weight:750}.small{font-size:.85rem;color:var(--muted)}.menu-btn{display:none;background:transparent;color:white;border:1px solid #648879;border-radius:10px;padding:8px 12px;font-size:1rem}
+@media(max-width:780px){.navlinks{display:none;position:absolute;top:75px;left:4%;right:4%;background:#19483d;padding:20px;border-radius:18px;flex-direction:column;align-items:flex-start;z-index:5}.navlinks.open{display:flex}.menu-btn{display:block}.nav .cta{display:none}.hero{grid-template-columns:1fr;padding:52px 0 65px;gap:10px}.hero-art{min-height:330px}.orb{width:280px}.cards,.split{grid-template-columns:1fr}.applications{grid-template-columns:repeat(2,1fr)}.section{padding:62px 0}.dark-panel{padding:25px}}
+@media(max-width:420px){.applications{grid-template-columns:1fr 1fr}.app{padding:16px}.hero h1{font-size:2.8rem}}
+</style>
+</head>
+<body>
+<header id="inicio">
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="#inicio"><span class="logo">✳</span> EcoFiltro</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+      <div class="navlinks" id="navlinks"><a href="#projeto">O projeto</a><a href="#funcionamento">Como funciona</a><a href="#materiais">Materiais</a><a href="#aplicacoes">Aplicações</a></div>
+      <a class="cta" href="#projeto">Conheça a ideia ↗</a>
+    </nav>
+    <div class="hero">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Ciência • Tecnologia • Sustentabilidade</div>
+        <h1>Uma ideia simples.<br><span>Um ar melhor.</span></h1>
+        <p>Conheça o EcoFiltro: um protótipo de baixo custo criado para demonstrar como materiais filtrantes podem reter parte das partículas presentes na fumaça.</p>
+        <div class="actions"><a class="btn primary" href="#funcionamento">Descobrir como funciona ↓</a><a class="btn secondary" href="#materiais">Ver materiais</a></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustração estilizada de um filtro">
+        <div class="orb"><div class="filter"><div class="mesh"></div></div></div>
+        <div class="bubble one">♻️ Pensado para reutilizar</div><div class="bubble two">🌿 Tecnologia acessível</div>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+<section class="section" id="projeto">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">01 — O desafio</div><h2>O que existe na fumaça?</h2><p class="lead">A queima de combustíveis e materiais orgânicos pode liberar uma mistura de gases e partículas sólidas ou líquidas suspensas no ar. Parte dessas partículas pode afetar a qualidade do ar e a saúde.</p></div>
+    <div class="cards">
+      <article class="card"><div class="icon">🌫️</div><h3>Material particulado</h3><p>Pequenas partículas que ficam suspensas no ar e podem variar em tamanho e composição.</p></article>
+      <article class="card"><div class="icon">🧪</div><h3>Filtragem em estudo</h3><p>O protótipo permite observar e comparar como diferentes materiais se comportam na passagem do ar.</p></article>
+      <article class="card"><div class="icon">🌎</div><h3>Consciência ambiental</h3><p>O projeto conecta investigação científica, sustentabilidade e escolhas tecnológicas mais responsáveis.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section materials" id="funcionamento">
+  <div class="wrap split">
+    <div>
+      <div class="kicker">02 — Como funciona</div><h2>O caminho do ar pelo EcoFiltro</h2>
+      <p class="lead">A proposta é construir uma pequena câmara de passagem de ar, com um ventilador e um material filtrante. O sistema é um modelo didático para estudar retenção de partículas.</p>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><div><h3>Movimentar o ar</h3><p>Um ventilador cria o fluxo de ar pelo interior da estrutura.</p></div></div>
+        <div class="step"><div class="num">2</div><div><h3>Passar pelo filtro</h3><p>O material filtrante pode reter parte das partículas, dependendo do tipo de material e das condições do teste.</p></div></div>
+        <div class="step"><div class="num">3</div><div><h3>Observar e comparar</h3><p>Os materiais podem ser comparados considerando retenção, resistência ao fluxo, custo e facilidade de substituição.</p></div></div>
+      </div>
+    </div>
+    <div class="dark-panel">
+      <div class="kicker" style="color:#c8ed76">Ponto importante</div><h2>Filtrar partículas não é o mesmo que remover gases.</h2>
+      <p>Um filtro para partículas não elimina automaticamente gases como dióxido de carbono (CO₂). Por isso, o EcoFiltro não deve ser apresentado como um equipamento que elimina toda a poluição.</p>
+      <div class="note"><strong>Segurança na feira:</strong> a demonstração deve ser feita sem queimar materiais nem produzir fumaça tóxica em ambientes fechados. O fluxo de ar pode ser demonstrado de forma segura.</div>
+    </div>
+  </div>
+</section>
+<section class="section" id="materiais">
+  <div class="wrap split">
+    <div><div class="kicker">03 — Construção</div><h2>Materiais para o protótipo</h2><p class="lead">A lista final depende do desenho e dos materiais disponíveis para a equipe. O objetivo é montar uma estrutura simples, observar seu funcionamento e registrar os resultados.</p>
+      <div class="pilllist"><span class="pill">Ventilador pequeno</span><span class="pill">Estrutura/câmara de ar</span><span class="pill">Material filtrante</span><span class="pill">Vedação</span><span class="pill">Suportes</span><span class="pill">Materiais de medição</span></div>
+      <p class="small">Escolham componentes compatíveis com a vazão de ar e montem tudo com supervisão de um adulto, especialmente nas ligações elétricas.</p>
+    </div>
+    <div class="card"><div class="icon">📋</div><h3>O que avaliar nos testes?</h3><p>Registrem o material utilizado, o custo, a facilidade de montagem, a passagem de ar e os resultados observáveis. Evitem afirmar uma eficiência percentual sem medições adequadas.</p><hr style="border:0;border-top:1px solid #e3e9df;margin:20px 0"><h3>Pergunta de pesquisa</h3><p><em>Como diferentes materiais filtrantes influenciam a passagem de ar e a retenção de partículas em um protótipo de baixo custo?</em></p></div>
+  </div>
+</section>
+<section class="section" id="aplicacoes" style="padding-top:20px">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">04 — Possíveis aplicações</div><h2>Onde a ideia pode ser estudada?</h2><p class="lead">Os exemplos abaixo são possibilidades conceituais de aplicação do princípio de filtragem — não uma certificação de que o protótipo esteja pronto para uso doméstico ou industrial.</p></div>
+    <div class="applications">
+      <article class="app"><span>🍖</span><h3>Churrasqueiras</h3><p>Estudar a retenção de parte das partículas da fumaça.</p></article>
+      <article class="app"><span>🔥</span><h3>Fogões e fornos</h3><p>Investigar materiais filtrantes em situações de combustão.</p></article>
+      <article class="app"><span>🏭</span><h3>Fontes estacionárias</h3><p>Entender por que sistemas reais exigem filtros específicos.</p></article>
+      <article class="app"><span>💡</span><h3>Novas soluções</h3><p>Explorar custo, manutenção e sustentabilidade no desenho de produtos.</p></article>
+    </div>
+    <div class="warning"><h3>⚠️ Limite do protótipo</h3><p>Este é um projeto escolar de demonstração. Não deve ser conectado a fontes reais de fumaça nem usado como substituto de equipamentos certificados de controle de emissões. A filtragem pode não remover gases perigosos.</p></div>
+  </div>
+</section>
+<section class="section materials">
+  <div class="wrap split">
+    <div><div class="kicker">05 — Sustentabilidade</div><h2>Uma solução também precisa ser sustentável.</h2><p class="lead">Além de pensar no funcionamento, o projeto considera o ciclo de vida do produto: materiais, consumo de energia, durabilidade, troca do filtro, transporte e descarte.</p></div>
+    <div class="cards" style="grid-template-columns:1fr 1fr">
+      <article class="card"><div class="icon">💰</div><h3>Custo</h3><p>Estimar o custo de montagem e manutenção.</p></article>
+      <article class="card"><div class="icon">🔄</div><h3>Manutenção</h3><p>Verificar quando o material precisa ser substituído.</p></article>
+      <article class="card"><div class="icon">🌱</div><h3>Impacto</h3><p>Considerar consumo e descarte de componentes.</p></article>
+      <article class="card"><div class="icon">🚀</div><h3>Inovação</h3><p>Avaliar se a ideia tem viabilidade em uma aplicação específica.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap" style="text-align:center;max-width:760px"><div class="kicker">EcoFiltro • Feira de Ciências</div><h2>Investigar. Testar. Aprender.</h2><p class="lead">O EcoFiltro une ciência, tecnologia, sustentabilidade, inovação e empreendedorismo em um protótipo escolar que ajuda a entender os princípios da filtragem do ar.</p><a class="btn primary" style="background:var(--green);color:white" href="#inicio">Voltar ao topo ↑</a></div>
+</section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><div><a class="brand" href="#inicio"><span class="logo">✳</span> EcoFiltro</a><p>Protótipo educacional para a Feira Cultural e de Ciências.</p></div><div class="small" style="color:#b8d0c5">Ciência • Tecnologia • Sustentabilidade • Inovação</div></div></footer>
+<script>
+const btn=document.getElementById('menuBtn'),links=document.getElementById('navlinks');
+btn.addEventListener('click',()=>links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+</script>
+</body>
+</html>
